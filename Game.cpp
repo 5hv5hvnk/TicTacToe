@@ -20,6 +20,33 @@ void Board(char grid[])
 
     cout << "     |     |     " << endl << endl;
 }
+void NewBoard()
+
+{
+    cout << "===========================RULES===========================" << endl<<endl;
+    cout<<"1. The game is played on a grid that's 3 squares by 3 squares."<<endl;
+
+    cout<<"2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares."<<endl;
+
+    cout<<"3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner."<<endl;
+
+    cout<<"4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie."<<endl<<endl;
+    cout << "=========================THE BOARD=========================" << endl;
+    cout << endl << "     |     |     " << endl;
+    cout << "  " <<1 << "  |  " << 2<< "  |  " << 3<< endl;
+
+    cout << "_____|_____|_____" << endl;
+    cout << "     |     |     " << endl;
+
+    cout << "  " << 4<< "  |  " << 5 << "  |  " << 6 << endl;
+
+    cout << "_____|_____|_____" << endl;
+    cout << "     |     |     " << endl;
+
+    cout << "  " << 7 << "  |  " << 8 << "  |  " << 9 << endl;
+
+    cout << "     |     |     " << endl << endl; 
+}
 int push(int x,char grid[],int player)
 {
 
@@ -116,6 +143,7 @@ int main()
     bool play=true;
     int player=0, input;
     char grid[9];
+    NewBoard();
     loop(i,9)
         grid[i]=' ';
     Board(grid);
